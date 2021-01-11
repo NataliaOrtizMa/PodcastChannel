@@ -78,7 +78,7 @@
 
     .episodios-background {
         top:500px; 
-        height: 803.5px;
+        height: 703.5px;
     }
 
     .subtitle {
@@ -117,7 +117,10 @@
     }
 
     iframe {
-        width: 40.6%; 
+        min-width: 40.6%; 
+        width: 584px;
+        height: 232px;
+        /* max-width: none; */
     }
 
     .final-section input[type=button] {
