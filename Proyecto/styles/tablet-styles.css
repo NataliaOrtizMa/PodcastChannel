@@ -24,7 +24,6 @@
     }
 
     .episodios-background {
-        /* top:350px;  */
         height: 703.5px;
     }
 
@@ -35,7 +34,7 @@
     iframe {
         width: 40.6%
     }
-    
+
     .iframe-container {
         flex-flow: row wrap;
     }
