@@ -1,0 +1,89 @@
+@media only screen  and (min-width: 600px) {
+    h2 {
+        font-size: 48px;
+        margin-left: 13.9%;
+        margin-top: 5.1%;
+    }
+
+    p {
+        font-size: 16px;
+        margin-left: 13.9%; 
+        margin-top: 8px;
+        width: 43.6%;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    .main-article input[type=button] {
+        margin-left: 13.9%;
+        margin-top: 56px;
+    }
+
+    .hello-world {
+        display: inline;
+    }
+
+    .episodios-background {
+        /* top:350px;  */
+        height: 703.5px;
+    }
+
+    .final-section{
+        height: 418px;
+    }
+    
+    .iframe-container {
+        flex-flow: row wrap;
+    }
+
+    .pictures-container {
+        flex-flow: row wrap;
+    }
+
+    div.pictures-container img {
+        width: 33.3%;
+        height: 9.3%;
+    }
+
+    .nosotros-article {
+        margin-right: 200px;
+        flex-flow: row ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nosotros-article div {
+        margin-left: 4.3%;
+    }
+
+    .nosotros-article h2 {
+        margin-left: 0;
+    }
+
+    .nosotros-article p {
+        margin-left: 0;
+    }
+
+    .nosotros-img {
+        width: 45.7%;
+        overflow: visible;
+    }
+    
+    .topicos {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        height: 7.7%;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 6.9%;
+    }
+
+    figure img {
+        margin-top: 69px;
+    }
+
+    figure figcaption {
+        margin-bottom: 34px;
+    }
+}
