@@ -39,13 +39,27 @@ input:checked ~ nav {
     width: 100%;
     left: 0;
 }
-
-input:checked ~ label>div.menu-hamburguesa-item{
-    display: none;
+input:not(:checked)~ label[for="menu"]:after {
+    /* content: '&#9776'; */
+    content: '☰';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 18px;
+    height: 12px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
-
-input:not(:checked) ~ label>div.menu-close{
-    display: none;
+input:checked ~ label[for="menu"]:after {
+    /* content: '&#x2716'; */
+    content: '✖';
+    width: 14px;
+    height: 14px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 li {
@@ -83,27 +97,10 @@ label {
     background: transparent;
 }
 
-.menu-hamburguesa-item {
-    width: 18px;
-    height: 12px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-}
-
 .linea {
     height: 2px;
     width: 18px;
     background: #060A24;
-}
-
-.menu-close {
-    width: 14px;
-    height: 14px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
 }
 
 h2 {
@@ -186,11 +183,14 @@ input[type=button]:hover {
 }
 
 iframe {
-    width: 93.1%;
+    /* width: 93.1%; */
+    width: 301px;
     height: 232px;
     margin-top: 21px;
     margin-right: 3.4%;
     margin-left: 3.4%;
+    border: 0;
+    background-color: transparent;
 }
 
 .nosotros-article{
